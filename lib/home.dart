@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/Screens/wala_canteen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,7 +17,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             Container(
-              padding: const EdgeInsets.only(left: 25.0, top: 45.0, right: 25.0),
+              padding:
+                  const EdgeInsets.only(left: 25.0, top: 45.0, right: 25.0),
               child: Column(
                 children: <Widget>[
                   Row(
@@ -48,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                         buildTopChip("Soties", false),
                         buildTopChip("Drinks", false),
                         buildTopChip("Lunch", false),
-                        buildTopChip("Dinner", false),                        
+                        buildTopChip("Dinner", false),
                       ],
                     ),
                   )
@@ -74,10 +76,9 @@ class _HomePageState extends State<HomePage> {
                       "Wala canteen",
                       "123 reviews",
                       "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-                     4),
+                      4),
                 ],
-              )
-              ),
+              )),
             ),
           ],
         ),
@@ -88,15 +89,18 @@ class _HomePageState extends State<HomePage> {
   GestureDetector buildItem(
       String title, String subTitle, String url, double rating) {
     return GestureDetector(
-      onTap: (){},
-          child: Container(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => Wala()));
+      },
+      child: Container(
         margin: const EdgeInsets.symmetric(vertical: 12.0),
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Column(
           children: <Widget>[
             Hero(
               tag: url,
-                child: Container(
+              child: Container(
                 height: 200,
                 decoration: BoxDecoration(
                     image: DecorationImage(
@@ -104,8 +108,7 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.cover,
                     ),
                     borderRadius: const BorderRadius.only(
-                    
-                      topLeft: Radius.circular(10.0),  
+                      topLeft: Radius.circular(10.0),
                       topRight: Radius.circular(10.0),
                     )),
               ),
