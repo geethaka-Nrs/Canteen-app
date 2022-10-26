@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app/Screens/wala_canteen.dart';
 
 class HomePage extends StatefulWidget {
+  static const routeName = "/home";
   const HomePage({super.key});
 
   @override
@@ -90,8 +91,9 @@ class _HomePageState extends State<HomePage> {
       String title, String subTitle, String url, double rating) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Wala()));
+        // Navigator.push(
+        //     context, MaterialPageRoute(builder: (context) => Wala()));
+        Navigator.of(context).pushNamed(Wala.routeName);
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 12.0),
