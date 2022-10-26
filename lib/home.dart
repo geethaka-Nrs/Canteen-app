@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app/Screens/wala_canteen.dart';
 
 class HomePage extends StatefulWidget {
+  static const routeName = "/home";
   const HomePage({super.key});
 
   @override
