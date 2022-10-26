@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class Wala extends StatefulWidget {
+  static const routeName = "/wala_canteen";
   const Wala({super.key});
 
   @override
