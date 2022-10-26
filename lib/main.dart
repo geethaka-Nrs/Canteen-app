@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/routes.dart';
 
 import 'home.dart';
 
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomePage(),
+      // home: HomePage(),
+      initialRoute: HomePage.routeName,
+      routes: routes,
     );
   }
 }

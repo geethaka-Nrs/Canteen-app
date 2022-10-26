@@ -91,8 +91,9 @@ class _HomePageState extends State<HomePage> {
       String title, String subTitle, String url, double rating) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Wala()));
+        // Navigator.push(
+        //     context, MaterialPageRoute(builder: (context) => Wala()));
+        Navigator.of(context).pushNamed(Wala.routeName);
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 12.0),
