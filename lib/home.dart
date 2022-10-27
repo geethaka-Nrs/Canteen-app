@@ -61,25 +61,26 @@ class _HomePageState extends State<HomePage> {
             // ignore: avoid_unnecessary_containers
             Container(
               child: Expanded(
-                  child: ListView(
-                children: <Widget>[
-                  buildItem(
-                      "Wala Canteen",
-                      "123 reviews",
-                      "https://images.pexels.com/photos/3676531/pexels-photo-3676531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-                      4),
-                  buildItem(
-                      "Goda canteen",
-                      "98 reviews",
-                      "https://images.pexels.com/photos/1147993/pexels-photo-1147993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-                      3.8),
-                  buildItem(
-                      "Wala canteen",
-                      "123 reviews",
-                      "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-                      4),
-                ],
-              )),
+                child: ListView(
+                  children: <Widget>[
+                    buildItem(
+                        "Wala Canteen",
+                        "123 reviews",
+                        "https://images.pexels.com/photos/3676531/pexels-photo-3676531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                        4),
+                    buildItem(
+                        "Goda canteen",
+                        "98 reviews",
+                        "https://images.pexels.com/photos/1147993/pexels-photo-1147993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                        3.8),
+                    buildItem(
+                        "Wala canteen",
+                        "123 reviews",
+                        "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                        4),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
