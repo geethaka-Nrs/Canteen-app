@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/Screens/login.dart';
 import 'package:my_app/routes.dart';
 
 import 'home.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       // home: HomePage(),
-      initialRoute: HomePage.routeName,
+      initialRoute: LoginHome.routeName,
       routes: routes,
     );
   }
